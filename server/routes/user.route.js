@@ -12,11 +12,14 @@ import {
 } from "../util/schema.js";
 import { validateRequest } from "../middleware/validate.js";
 
+//all user api interaction here
+//and we all so added schema checking
+//we also added authorization checking
+
 const router = express.Router();
 
 router.put(
   "/username/:id",
-  authToken,
   validateRequest(updateUserNameSchema),
   updateUserName,
 );

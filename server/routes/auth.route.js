@@ -9,6 +9,9 @@ import {
 import { verifyEmail } from "../controllers/mail.controller.js";
 import { verifyOTP } from "../controllers/phone.controller.js";
 
+//all api routes for our auth(login, register and logout) here
+//and we also add data checking from joi
+
 const router = express.Router();
 
 router.post("/register", validateRequest(registrationSchema), register);
