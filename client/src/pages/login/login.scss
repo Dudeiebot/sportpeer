@@ -1,0 +1,74 @@
+/* background-color: #d09285; */
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+.loginapp {
+  background-color: #fcf5f3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+
+  .container {
+    width: 1024px;
+
+    .auth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100%;
+      gap: 30px;
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: black;
+        font-family: "Libre Baskerville", serif;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        background-color: #fcf5f3;
+        width: 100%;
+        max-width: 400px;
+        gap: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+        input[type="email"],
+        input[type="password"],
+        input[type="text"],
+        select {
+          margin-bottom: 20px;
+          padding: 15px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 14px;
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        button {
+          background-color: #7c8562;
+          color: white;
+          border: none;
+          padding: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 14px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #8da448;
+          }
+        }
+      }
+    }
+  }
+}

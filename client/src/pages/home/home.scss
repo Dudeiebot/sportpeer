@@ -1,0 +1,79 @@
+@import "../../mobile.scss";
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap");
+
+.homePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fcf5f3;
+  font-family: "Edu AU VIC WA NT Hand", sans-serif;
+
+  .textContainer {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 100px;
+      gap: 50px;
+
+      height: 100%;
+
+      @include large {
+        padding-right: 50px;
+      }
+
+      @include middle {
+        padding: 0;
+      }
+
+      @include small {
+        justify-content: flex-start;
+      }
+
+      .title {
+        font-size: 24px;
+        text-align: center;
+
+        align-items: center;
+
+        @include large {
+          font-size: 50px;
+        }
+
+        @include middle {
+          font-size: 30px;
+        }
+
+        @include small {
+          font-size: 20px;
+        }
+      }
+
+      h1 {
+        font-size: 30px;
+        text-align: center;
+
+        @include large {
+          font-size: 32px;
+        }
+      }
+
+      h2 {
+        text-align: right;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 2);
+        font-weight: bold;
+        color: #ff5733;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

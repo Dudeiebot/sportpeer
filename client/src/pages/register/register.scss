@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+.registerapp {
+  background-color: #fcf5f3;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+
+  .container {
+    width: 1024px;
+
+    .auth {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      /* background-color: #d09285; */
+      overflow: hidden;
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: black;
+        font-family: "Libre Baskerville", serif;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        background-color: #fcf5f3;
+        width: 100%;
+        max-width: 400px;
+        gap: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+
+        input[type="email"],
+        input[type="password"],
+        input[type="text"],
+        select {
+          margin-bottom: 15px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          font-size: 12px;
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        textarea {
+          resize: vertical;
+          height: 100px;
+        }
+
+        button {
+          background-color: #7c8562;
+          color: white;
+          border: none;
+          padding: 10px;
+          border-radius: 4px;
+          cursor: pointer;
+          font-size: 12px;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #8da448;
+          }
+        }
+
+        .form-group {
+          gap: 10px;
+        }
+
+        .input-group {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          input[type="text"] {
+            flex: 1;
+            margin-right: 10px;
+          }
+
+          button {
+            flex: 0 0 auto;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+
+            &:hover {
+              background-color: #c82333;
+            }
+          }
+        }
+
+        label {
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        span {
+          display: block;
+          font-size: 12px;
+          text-align: center;
+          margin-top: 10px;
+
+          a {
+            color: #007bff;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
