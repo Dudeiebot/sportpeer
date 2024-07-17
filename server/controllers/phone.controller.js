@@ -1,5 +1,11 @@
 import { db } from "../util/db.js";
 
+//verifying OTP worked well but the only constraint is that, it was expensive
+//i was not opportuned to implement static OTP but it would have been the same
+//pattern i did the email own also if i was oportuned
+//
+//i USED message central here, and the handle all the otp verification (ranging from the generation to the validation)
+
 export const verifyOTP = async (req, res) => {
   //add joi for this
   const { phone, otpCode } = req.body;

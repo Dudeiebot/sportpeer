@@ -1,5 +1,12 @@
 import { db } from "../util/db.js";
 
+//verifyemail
+//so my approach here is to generate a token and store it ins the db
+//we come here to comapre the token by extracting it out from the link sent the mail
+//we also intiate a boolesn(is_verify) to false
+//GG
+//if it is the same, the boolean is intiated to true and the user have access to the app
+
 export const verifyEmail = async (req, res) => {
   const { token } = req.query;
 

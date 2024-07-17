@@ -1,6 +1,10 @@
 import bcrypt from "bcrypt";
 import { db } from "../util/db.js";
 
+//All User interaction is added here
+//we updateUserName, updatePassword and also updateEmail
+
+//updateUserName
 export const updateUserName = async (req, res) => {
   const id = req.params.id;
   const tokenUserId = req.userId;
@@ -23,6 +27,10 @@ export const updateUserName = async (req, res) => {
     return res.status(500).json({ error: error.message });
   }
 };
+
+//updateEmail
+//TODO:
+//intialise and OTP validation before they can change it
 
 export const updateEmail = async (req, res) => {
   const id = req.params.id;
@@ -47,6 +55,8 @@ export const updateEmail = async (req, res) => {
   }
 };
 
+//updatePassword
+//also intialize the OTP validation
 export const updatePass = async (req, res) => {
   const id = req.params.id;
   const tokenUserId = req.userId;
