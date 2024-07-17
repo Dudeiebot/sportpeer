@@ -1,12 +1,12 @@
 import Joi from "joi";
 
+//data integration checking at the backenc
+
 export const registrationSchema = Joi.object({
   email: Joi.string().email().required(),
 
-  phoneNos: Joi.string()
-    .pattern(/^[0-9\s\-]+$/)
-    .required(),
-
+  phoneNos: Joi.string().required(),
+  bio: Joi.string().max(500).required(),
   password: Joi.string().min(6).required(),
 
   sportInterest: Joi.array().items(Joi.string()).required(),

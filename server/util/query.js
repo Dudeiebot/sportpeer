@@ -1,4 +1,7 @@
 import { db } from "./db.js";
+
+//some random queries that i took out of register and login
+//when it is getting too dirty
 export const generateUsername = (email) => {
   const randomNumber = Math.floor(Math.random() * 1000);
   const atIndex = email.indexOf("@");

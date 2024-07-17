@@ -2,6 +2,8 @@ import postmark from "postmark";
 import nodemailer from "nodemailer";
 import "dotenv/config";
 
+//implementing all postmark api routes
+
 export const sender = nodemailer.createTransport({
   host: "smtp.postmarkapp.com", // Postmark's SMTP server
   port: 587, // Port for secure SMTP

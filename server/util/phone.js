@@ -2,6 +2,9 @@ import { db } from "../util/db.js";
 import "dotenv/config";
 import request from "request";
 
+//this is all message central api routes
+//from generating to sending to validating
+
 const email = process.env.EMAIL;
 const customerId = process.env.CUSTOMERID;
 const password = process.env.OTP_PASSWORD;
