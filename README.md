@@ -1,3 +1,3 @@
 
-.env file
-mysql db
+- .env file
+- mysql db
